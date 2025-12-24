@@ -35,6 +35,14 @@ if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
 fi
 
 # -----------------------------------------------------------------------------
+# Claude Code
+# -----------------------------------------------------------------------------
+if ! command -v claude &> /dev/null; then
+  echo "Installing Claude Code..."
+  curl -fsSL https://claude.ai/install.sh | bash
+fi
+
+# -----------------------------------------------------------------------------
 # Symlink Dotfiles
 # -----------------------------------------------------------------------------
 echo "Symlinking dotfiles..."
