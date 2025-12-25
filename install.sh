@@ -65,6 +65,7 @@ link_file() {
   echo "  Linked $dst -> $src"
 }
 
+link_file "$DOTFILES_DIR/.bashrc" "$HOME/.bashrc"
 link_file "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 link_file "$DOTFILES_DIR/.tmux.conf" "$HOME/.tmux.conf"
 link_file "$DOTFILES_DIR/.aliases" "$HOME/.aliases"
